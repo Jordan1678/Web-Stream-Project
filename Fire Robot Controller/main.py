@@ -42,4 +42,4 @@ def video_feed():
     return Response(gen(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
-app.run()
+app.run(host="0.0.0.0", port=80)
